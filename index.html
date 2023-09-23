@@ -41,13 +41,13 @@
   setInterval(function(){
     let date = new Date(),
       ti =
-          date.getFullYear() + '/' +
-          ('0' + (date.getMonth() + 1)).slice(-2) + '/' +
+          date.getFullYear() + '-' +
+          ('0' + (date.getMonth() + 1)).slice(-2) + '-' +
           ('0' + date.getDate()).slice(-2) 
         da = 
           (date.getDay());
       En = 
-["(Sun)", "(Mon)", "(Tue)", "(Wed)", "(Thu)", "(Fri)", "(Sat)"][da];
+[" Sun", " Mon", " Tue", " Wed", " Thu", " Fri", " Sat"][da];
 
     p.textContent = ti + En;
   }, 0);
@@ -67,7 +67,6 @@
     p1.textContent = me;
   }, 0);
 }(document));
-
 </script>
 </body>
 </html>
